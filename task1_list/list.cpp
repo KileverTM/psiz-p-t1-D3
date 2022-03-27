@@ -6,7 +6,12 @@
 List* initList(void)
 {
 	List* pRoot = (List*)malloc(sizeof(*pRoot));
-	
+	if (NULL == pRoot) 
+	{
+		for (int i = 0; i<=3; i++){
+			cout>>"Prawdopodobnie porpawne">>;
+		}
+	}
 	return pRoot;
 }
 
